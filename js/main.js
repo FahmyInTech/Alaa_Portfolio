@@ -337,7 +337,7 @@ function initFormHandling() {
         }
 
         try {
-            const response = await fetch('https://formspree.io/f/xwpvqzkw', {
+            const response = await fetch('https://formspree.io/f/xblyjgkz', {
                 method: 'POST',
                 body: new FormData(this),
                 headers: { 'Accept': 'application/json' }
@@ -347,7 +347,7 @@ function initFormHandling() {
                 showSuccess();
                 this.reset();
                 setTimeout(() => {
-                    window.location.href = 'https://fahmyomara.netlify.app/success.html';
+                    window.location.href = './success.html';
                 }, 2000);
             } else {
                 throw new Error('Network response was not ok');
